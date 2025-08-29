@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<head>
+ <title>Recipe Card App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f5fa;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 15px;
+      background: #ffffff;
+      border-radius: 18px;
+      box-shadow: 0 6px 30px rgba(110, 120, 160, 0.12);
+    }
+    .main-title {
+      text-align: center;
+      font-size: 2.6em;
+      font-weight: bold;
+      color: #4169e1;
+      margin-bottom: 18px;
+      letter-spacing: 3px;
+    }
+    .recipes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      justify-content: center;
+    }
+    .card {
+      background: #f9fafb;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(128,128,128,0.14);
+      flex: 1 1 340px;
+      max-width: 380px;
+      min-width: 280px;
+      padding: 22px 20px 18px 20px;
+      margin: 0 auto;
+      transition: box-shadow 0.3s;
+    }
+    .card:hover {
+      box-shadow: 0 8px 24px rgba(65,105,225,0.14);
+    }
+    .card-title {
+      font-size: 1.5em;
+      color: #4b3f72;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .section-title {
+      color: #304ffe;
+      font-size: 1.1em;
+      margin-top: 14px;
+      margin-bottom: 4px;
+      font-weight: bold;
+    }
+    ul, ol {
+      margin: 0 0 7px 22px;
+    }
+    .adv, .disadv {
+      margin-top: 10px;
+      padding: 7px 11px;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    .adv {
+      background: #e8f5e9;
+      color: #388e3c;
+    }
+    .disadv {
+      background: #fff3e0;
+      color: #e65100;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="main-title">RECIPE CARD</div>
+    <div class="recipes">
+
+      <!-- Chicken Biryani Card -->
+      <div class="card">
+        <div class="card-title">Chicken Biryani</div>
+        <div class="section-title">Ingredients</div>
+        <ul>
+          <li>Chicken pieces</li>
+          <li>Basmati rice</li>
+          <li>Onions, tomatoes, ginger-garlic paste</li>
+          <li>Spices, herbs</li>
+          <li>Yogurt</li>
+        </ul>
+        <div class="section-title">Method</div>
+        <ol>
+          <li>Marinate chicken and cook with spices and vegetables.</li>
+          <li>Layer rice and chicken, cook together till done.</li>
+        </ol>
+        <div class="adv"><b>Advantage:</b> Rich taste, aromatic spices. Provides proteins and carbs.</div>
+        <div class="disadv"><b>Disadvantage:</b> Time-consuming, high calorie.</div>
+      </div>
+
+      <!-- Chocolate Cake Card -->
+      <div class="card">
+        <div class="card-title">Chocolate Cake</div>
+        <div class="section-title">Ingredients</div>
+        <ul>
+          <li>Flour</li>
+          <li>Sugar</li>
+          <li>Cocoa powder</li>
+          <li>Baking powder & soda</li>
+          <li>Eggs, milk, oil</li>
+        </ul>
+        <div class="section-title">Method</div>
+        <ol>
+          <li>Mix dry and wet ingredients.</li>
+          <li>Bake at 180°C for 35 minutes.</li>
+        </ol>
+        <div class="adv"><b>Advantage:</b> Popular dessert, tasty treat.</div>
+        <div class="disadv"><b>Disadvantage:</b> High sugar, high calorie.</div>
+      </div>
+
+      <!-- Ice Cream Card -->
+      <div class="card">
+        <div class="card-title">Ice Cream</div>
+        <div class="section-title">Ingredients</div>
+        <ul>
+          <li>Milk, cream</li>
+          <li>Sugar</li>
+          <li>Flavor (vanilla, chocolate)</li>
+        </ul>
+        <div class="section-title">Method</div>
+        <ol>
+          <li>Mix ingredients, churn and freeze till solid.</li>
+        </ol>
+        <div class="adv"><b>Advantage:</b> Cools body, enjoyable treat.</div>
+        <div class="disadv"><b>Disadvantage:</b> High fat and sugar
